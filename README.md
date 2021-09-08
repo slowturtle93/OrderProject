@@ -4,15 +4,15 @@ MSA  주문 프로젝트
 ✔ 주문 프로젝트 개발.
 주문 프로젝트 구현에 앞서 전체 요구사항과 맥락을 공유함.
 
-⚬ 주문 프로젝트의 요구사항과 배경 설명
+⚬ 주문 프로젝트의 요구사항과 배경 설명<br>
 ⚬ 도메인별 다이어그램 공유
 
 
 ✔ partner 도메인 개발 1.
 partner 도메인의 domain, infrastructure layer 를 개발하고 그 과정에서 대체키와 DIP 개념도 함께 설명함.
 
-⚬ partner domain 개발 (Entity, Service 구현)
-⚬ partner infrastructure 개발 (Reader, Store, DIP 개념)
+⚬ partner domain 개발 (Entity, Service 구현)<br>
+⚬ partner infrastructure 개발 (Reader, Store, DIP 개념)<br>
 ⚬ 추가 공유: 대체키, DIP
 
 
