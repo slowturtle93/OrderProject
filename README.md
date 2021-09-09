@@ -11,7 +11,7 @@ java11, intellij, Spring JPA, MySql
 ⚬ 도메인별 다이어그램 공유
 
 
-✔ partner 도메인 개발 1.<br>
+✔ [partner 도메인 개발 1](https://hsti.tistory.com/77)<br>
 partner 도메인의 domain, infrastructure layer 를 개발하고 그 과정에서 대체키와 DIP 개념도 함께 설명
 
 ⚬ partner domain 개발 (Entity, Service 구현)<br>
