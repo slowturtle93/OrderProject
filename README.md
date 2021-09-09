@@ -2,7 +2,7 @@
 [MSA  주문 프로젝트](https://hsti.tistory.com/76)
 
 개발환경<br>
-java11, intellij, MySql
+java11, intellij, Spring JPA, MySql
 
 ✔ 주문 프로젝트 개발.<br>
 주문 프로젝트 구현에 앞서 전체 요구사항과 맥락을 공유
