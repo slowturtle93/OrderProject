@@ -56,4 +56,22 @@ public class PartnerDto {
             this.status = partnerInfo.getStatus();
         }
     }
+
+    @Getter
+    @Setter
+    @ToString
+    public static class Main{
+        private String partnerToken;
+        private String partnerName;
+        private String businessNo;
+        private String email;
+        private Partner.Status status;
+    }
+
+    @Getter
+    @Setter
+    @ToString
+    public static class ChangeStatusPartnerRequest{
+        private String partnerToken;
+    }
 }

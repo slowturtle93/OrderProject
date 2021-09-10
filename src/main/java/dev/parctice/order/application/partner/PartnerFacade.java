@@ -27,4 +27,18 @@ public class PartnerFacade {
         notificationService.sendEmail(partnerInfo.getEmail(), "title", "description"); // 등록 후 이메일 발송을 한다.
         return partnerInfo; // 등록 된 파트너 정보를 리턴한다.
     }
+
+    // Partner 상태 enable 로 변경한다.
+    public void enablePartner(String partnerToken){ partnerService.enablePartner(partnerToken); }
+
+    // Partner 상태 disable 로 변경한다.
+    public void disablePartner(String partnerToken){
+        partnerService.disablePartner(partnerToken);
+    }
+
+    // Partner 정보를 조회한다.
+    public PartnerInfo retrievePartnerInfo(String partnerToken){
+        return partnerService.getPartnerInfo(partnerToken);
+    }
+
 }
