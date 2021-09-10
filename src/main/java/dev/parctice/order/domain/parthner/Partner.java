@@ -52,7 +52,7 @@ public class Partner extends AbstractEntity {
     private String businessNo;   // 사업자등록번호(필수값)
     private String email;        // 이메일(필수값)
 
-    // partner의 상태를 Enume으로 관리하기 위해 선언
+    // partner 의 상태를 Enum 으로 관리하기 위해 선언
     @Enumerated(EnumType.STRING)
     private Status status;
 
