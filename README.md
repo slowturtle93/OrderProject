@@ -19,7 +19,7 @@ partner 도메인의 domain, infrastructure layer 를 개발하고 그 과정에
 ⚬ 추가 공유: 대체키, DIP
 
 
-✔ partner 도메인 개발 2.<br>
+✔ [partner 도메인 개발 2](https://hsti.tistory.com/78)<br>
 partner 도메인의 application, interfaces layer 를 개발하고 그 과정에서 API 응답 체계 개념도 함께 설명
 
 ⚬ partner application 개발<br>
