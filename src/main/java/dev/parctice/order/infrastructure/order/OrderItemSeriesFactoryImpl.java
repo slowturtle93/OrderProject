@@ -37,7 +37,7 @@ public class OrderItemSeriesFactoryImpl implements OrderItemSeriesFactory {
                             // 주문 상품의 Option 정보 객체화
                             var initOrderItemOption = orderItemOptionRequest.toEntity(orderItemOptionGroup);
                             // 주문 상품의 Option 정보 저장
-                            orderStore.store(initOrderItem);
+                            orderStore.store(initOrderItemOption);
                         });
                     });
                     return orderItem;
