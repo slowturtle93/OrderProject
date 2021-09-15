@@ -27,7 +27,7 @@ partner 도메인의 application, interfaces layer 를 개발하고 그 과정�
 ⚬ 추가 공유: 로깅의 중요성, API 응답 체계
 
 
-✔ item 도메인 개발.<br>
+✔ [item 도메인 개발](https://hsti.tistory.com/79)<br>
 item 도메인을 개발하고 그 과정에서 DDD 의 aggregate, Factory 와 Repository, 연관관계 설정, MapStruct 사용 등을 함께 설명
 
 ⚬ item 도메인 개발<br>
