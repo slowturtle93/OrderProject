@@ -34,7 +34,7 @@ item 도메인을 개발하고 그 과정에서 DDD 의 aggregate, Factory 와 R
 ⚬ 추가 공유: DDD 의 aggregate, Factory 와 Repository, 연관관계 설정, MapStruct 사용
 
 
-✔ order 도메인 개발.<br>
+✔ [order 도메인 개발](https://hsti.tistory.com/80)<br>
 order 도메인을 개발하고 그 과정에서 보상 트랜잭션 개념 등을 함께 설명
 
 ⚬ order 도메인 개발<br>
