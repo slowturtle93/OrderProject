@@ -30,3 +30,9 @@ spring:
 
 logging:
   config: classpath:logback-local.xml
+
+# aws sqs
+cloud:
+  aws:
+    access-key: AKIAZ43H435T2BDT5FQL
+    secret-key: 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

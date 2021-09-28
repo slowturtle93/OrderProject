@@ -99,11 +99,56 @@ public class Order extends AbstractEntity {
     }
 
     /**
+     * 주문 상태 [배송준비] 변경
+     */
+    public void deliveryPrepare() {
+        if (this.status != Status.ORDER_COMPLETE) throw new IllegalStatusException();
+        this.status = Status.DELIVERY_PREPARE;
+        this.getOrderItemList().forEach(OrderItem::deliveryPrepare);
+    }
+
+    /**
+     * 주문 상태 [배송중] 변경
+     */
+    public void inDelivery() {
+        if (this.status != Status.DELIVERY_PREPARE) throw new IllegalStatusException();
+        this.status = Status.IN_DELIVERY;
+        this.getOrderItemList().forEach(OrderItem::inDelivery);
+    }
+
+    /**
+     * 주문 상태 [배송완료] 변경
+     */
+    public void deliveryComplete() {
+        if (this.status != Status.IN_DELIVERY) throw new IllegalStatusException();
+        this.status = Status.DELIVERY_COMPLETE;
+        this.getOrderItemList().forEach(OrderItem::deliveryComplete);
+    }
+
+    /**
      * 주문 상태 변경 준비 확인
      * @return
      */
     public boolean isAlreadyPaymentComplete() {
         return this.status != Status.INIT;
+    }
+
+    public void updateDeliveryFragment(
+            String receiverName,
+            String receiverPhone,
+            String receiverZipcode,
+            String receiverAddress1,
+            String receiverAddress2,
+            String etcMessage
+    ) {
+        this.deliveryFragment = DeliveryFragment.builder()
+                .receiverName(receiverName)
+                .receiverPhone(receiverPhone)
+                .receiverZipcode(receiverZipcode)
+                .receiverAddress1(receiverAddress1)
+                .receiverAddress2(receiverAddress2)
+                .etcMessage(etcMessage)
+                .build();
     }
 
 }

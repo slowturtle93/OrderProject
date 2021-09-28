@@ -58,4 +58,25 @@ public class OrderServiceImpl implements OrderService{
         var orderItemList = order.getOrderItemList(); //  주문 상품 리스트 조회
         return orderInfoMapper.of(order, orderItemList);
     }
+
+    /**
+     * 선물하기 수락 시 수령인 배송지 정보 업데이트
+     *
+     * @param orderToken
+     * @param request
+     */
+    @Override
+    @Transactional
+    public void updateReceiverInfo(String orderToken, OrderCommand.UpdateReceiverInfoRequest request) {
+        var order = orderReader.getOrder(orderToken);
+        order.updateDeliveryFragment(
+                request.getReceiverName(),
+                request.getReceiverPhone(),
+                request.getReceiverZipcode(),
+                request.getReceiverAddress1(),
+                request.getReceiverAddress2(),
+                request.getEtcMessage()
+        );
+        order.deliveryPrepare();
+    }
 }

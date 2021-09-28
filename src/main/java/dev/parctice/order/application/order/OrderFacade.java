@@ -51,4 +51,15 @@ public class OrderFacade {
         notificationService.sendKakao("PAYMENT", "content"); // 주문 결제 고지
     }
 
+    /**
+     * 선물하기 수락 시 수령인 배송지 정보 업데이트
+     *
+     * @param orderToken
+     * @param orderCommand
+     */
+    public void updateReceiverInfo(String orderToken, OrderCommand.UpdateReceiverInfoRequest orderCommand) {
+        orderService.updateReceiverInfo(orderToken, orderCommand);
+        notificationService.sendKakao(null, null);
+    }
+
 }
