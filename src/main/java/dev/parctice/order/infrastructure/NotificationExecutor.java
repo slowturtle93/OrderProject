@@ -23,15 +23,18 @@ public class NotificationExecutor implements NotificationService {
 
     @Override
     public void sendEmail(String email, String title, String description) {
-        log.info("sendEmail");
+        try{
+            SimpleMailMessage message = new SimpleMailMessage();
+            message.setTo(email);
+            message.setFrom(FROM_ADDRESS);
+            message.setSubject(title);
+            message.setText(description);
 
-        SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo(email);
-        message.setFrom(FROM_ADDRESS);
-        message.setSubject(title);
-        message.setText(description);
-
-        mailSender.send(message);
+            mailSender.send(message);
+            log.info("sendEmail success");
+        }catch (Exception e){
+            log.info("sendEmail fail");
+        }
     }
 
     @Override
