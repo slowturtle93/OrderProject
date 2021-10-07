@@ -53,6 +53,6 @@ cloud:
 example.sms:
   apikey: NCSFE93O6OB7YOZZ
   apisecret: 1YNIWXTTDUWBXL98M6CSQH85LGGICZ2J
-  phone: '01026898588'
+  phone: '01011112222'
 
 
