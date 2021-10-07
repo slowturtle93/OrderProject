@@ -49,5 +49,10 @@ cloud:
     access-key: AKIAZ43H435T2BDT5FQL
     secret-key: 9LQ4xT3RSJ1bkRtmn8zN2yimosuyT/cGlAFd5Wxn
 
+# coolsms
+example.sms:
+  apikey: NCSFE93O6OB7YOZZ
+  apisecret: 1YNIWXTTDUWBXL98M6CSQH85LGGICZ2J
+  phone: '01026898588'
 
 

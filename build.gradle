@@ -40,6 +40,9 @@ dependencies {
 	// mail
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
 
+	// coolsms
+	compileOnly group: 'net.nurigo', name: 'javaSDK', version: '2.2'
+
 	implementation 'com.google.guava:guava:28.2-jre'
 	implementation 'org.apache.commons:commons-lang3:3.9'
 
