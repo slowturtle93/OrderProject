@@ -1,12 +1,14 @@
-package dev.parctice.order.infrastructure.order.payment;
+package dev.parctice.order.infrastructure.order.payment.naver;
 
 import dev.parctice.order.domain.order.OrderCommand;
 import dev.parctice.order.domain.order.payment.PayMethod;
+import dev.parctice.order.infrastructure.order.payment.PaymentApiCaller;
 
-public class PgCardApiCaller implements PaymentApiCaller{
+public class NaverPayApiCaller implements PaymentApiCaller {
+
     @Override
     public boolean support(PayMethod payMethod) {
-        return PayMethod.CARD == payMethod;
+        return PayMethod.NAVER_PAY == payMethod;
     }
 
     @Override
