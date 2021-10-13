@@ -43,6 +43,11 @@ dependencies {
 	// coolsms
 	compileOnly group: 'net.nurigo', name: 'javaSDK', version: '2.2'
 
+	// retrofit
+	implementation 'com.squareup.retrofit2:retrofit:2.9.0'          // 필수
+	implementation 'com.squareup.retrofit2:converter-gson:2.9.0'    // gson converter
+	implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0' // logging interceptor
+
 	implementation 'com.google.guava:guava:28.2-jre'
 	implementation 'org.apache.commons:commons-lang3:3.9'
 
